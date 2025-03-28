@@ -10,6 +10,7 @@ body {
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
+    overflow-x: hidden; /* Ngăn cuộn ngang trên điện thoại */
 }
 
 header {
@@ -27,6 +28,7 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -110,4 +112,64 @@ footer p {
 #contact p strong {
     font-weight: bold;
     color: #4A90E2;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    form input, form textarea {
+        font-size: 0.95rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        font-size: 0.9rem;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem;
+    }
+
+    form button {
+        font-size: 0.95rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
 }
