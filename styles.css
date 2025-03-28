@@ -100,3 +100,14 @@ footer {
 footer p {
     font-size: 1rem;
 }
+
+/* New section for contact information */
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#contact p strong {
+    font-weight: bold;
+    color: #4A90E2;
+}
